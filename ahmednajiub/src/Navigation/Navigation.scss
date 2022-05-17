@@ -1,0 +1,75 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 112px;
+  padding: 0 50px;
+  font-size: 1.2em;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0 0 5px 5px white;
+  @media screen and (max-width: 800px) {
+    font-size: 1em;
+    padding: 0 25px;
+    gap: 0.25em;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 0.65em;
+    padding: 10px; 
+    gap: 0 10px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 0.5em;
+    padding: 0 5px; 
+    gap: 10px;
+  }
+
+}
+
+nav a {
+  color: var(--main-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  @media screen and (max-width: 600px) {
+    gap: 0.5em;
+  }
+}
+nav > ul > li > a {
+  color: #333;
+  width: 125px;
+  height: 50px;
+  border-radius: 15px;
+  transition: background-color 500ms, color 500ms, opacity 500ms;
+  @media screen and (max-width: 800px) {
+    width: 100x;
+  }
+  @media screen and (max-width: 600px) {
+    width: 75px;
+  }
+
+}
+
+nav > ul li:last-of-type > a {
+  background-color: var(--main-color);
+  color: white;
+}
+
+nav > ul > :not(li:last-of-type) > a:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+nav > ul > li:last-of-type > a:hover {
+  opacity: 0.8;
+}

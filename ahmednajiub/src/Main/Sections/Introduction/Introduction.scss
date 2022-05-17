@@ -1,0 +1,161 @@
+#introduction {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: calc(100vh - 112px);
+  padding: 0 20%;
+  justify-self: center;
+  transition: all 0.5s;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    font-size: 0.70em;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    font-size: 0.50em;
+  }
+}
+
+#introduction > .box {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: flex-end;
+  column-gap: 50px;
+  row-gap: 20px;
+  grid-template-areas:
+    ". . profile"
+    "message message profile"
+    "heading heading profile"
+    "description description profile"
+    "resume contact profile"
+    ". . profile";
+  @media screen and (max-width: 800px) {
+    column-gap: 40px;
+    row-gap: 15px;
+  }
+  @media screen and (max-width: 600px) {
+    column-gap: 30px;
+    row-gap: 10px;
+  }
+}
+
+#introduction > .box > .message {
+  grid-area: message;
+  position: relative;
+  width: fit-content;
+  min-width: 40px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  background: var(--main-color);
+  color: white;
+}
+
+#introduction > .box > .message::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  border: 10px solid transparent;
+  border-left-color: var(--main-color);
+}
+
+#introduction > .box > h1 {
+  grid-area: heading;
+  margin: 0;
+}
+
+#introduction > .box > h1 > span {
+  color: var(--main-color);
+}
+
+#introduction > .box > p {
+  grid-area: description;
+  margin: 0;
+}
+
+#introduction > .box > a {
+  display: grid;
+  place-content: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  color: var(--main-color);
+  border: 2.5px solid var(--main-color);
+  font-size: 1em;
+  text-decoration: none;
+  @media screen and (max-width: 800px) {
+    width: 112px;
+    height: 37px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 75px;
+    height: 25px;
+  }
+}
+
+#introduction > .box > a.resume {
+  grid-area: resume;
+  transition: 250ms ease-in-out;
+  :hover {
+    transform: translateY(-5px);
+  }
+}
+
+#introduction > .box > a.contact {
+  grid-area: contact;
+  color: white;
+  background-color: var(--main-color);
+  transition: 250ms ease-in-out;
+}
+
+#introduction > .box > .profile {
+  --size: 25vmax;
+  grid-area: profile;
+  position: relative;
+  place-self: center;
+  @media screen and (max-width: 600px) {
+    --size: 20vmax;
+  }
+  @media screen and (max-width: 400px) {
+    --size: 15vmax;
+  }
+}
+
+// #introduction > .box > .profile::before,
+// #introduction > .box > .profile::after {
+//   content: "";
+//   position: absolute;
+//   height: calc(var(--size) * 0.85);
+//   width: calc(var(--size) * 0.85);
+//   border-radius: 50%;
+//   left: 50%;
+//   bottom: 0;
+//   transform: translateX(-50%) rotate(-45deg);
+//   border: clamp(20px, 2.5vw, 25px) solid var(--main-color);
+// }
+
+// #introduction > .box > .profile::after {
+//   border-top-color: transparent;
+//   border-right-color: transparent;
+// }
+
+#introduction > .box > .profile > img {
+  position: relative;
+  width: var(--size);
+  border-radius: 50%;
+  border: 5px solid transparent;
+  filter: drop-shadow(0 0 2.5px #333);
+}
+
+#introduction > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // gap: 1em;
+  justify-self: center;
+  transition: all 0.5s;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}

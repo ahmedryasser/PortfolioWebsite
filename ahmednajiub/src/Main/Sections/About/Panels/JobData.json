@@ -1,0 +1,23 @@
+[
+    {
+        "title":" Software Engineering Intern",
+        "location":"Cairo, Egypt ",
+        "date": "May 2018 - June 2018",
+        "employer": "Arab Contractors",
+        "functions": ["Shadowed a Senior Software Engineer while he was developing for the company", "Implemented python programs to help the company with its calculations.", "Analyzed and debugged code for the company."]
+    },
+    {
+        "title":"Stock Technical Analysis Intern",
+        "location":"Dubai, UAE ",
+        "date": "May 2020 - June 2020",
+        "employer": "BH Mubasher",
+        "functions": ["Learned many strategies of trading stocks, including stock patterns and trend indicators", "Took a course in technical analysis that provided practical and technical experience trading stocks by referring to stock  patterns, company news, and trend indicators "]
+    },
+    {
+        "title":"President of Computer Science Club",
+        "location":"Malibu, USA",
+        "date": "August 2021 - now",
+        "employer": "Pepperdine University",
+        "functions": ["Selecting a team of the brightest computer scientist students for leadership positions including lead designer and presenter.", "Managing the process of marketing the club through posters and social media  ", "Contacting the university to organize events for the club and funding for its activities", "Attended meetings with the club’s board where we discussed our plans with the club", "Brainstormed ideas the club could do including building applications and games" ]
+    }
+]

@@ -1,0 +1,23 @@
+#projects{
+    align-items: center;
+    justify-self: center;
+    #inprogress{
+        align-content: center;
+        justify-self: center;
+        color:black;
+        background-color: white;
+        border-style: outset;
+        width: 1fr;
+        border-radius: 10px;
+        margin: 25%;
+        
+        text-align: center;
+        img{
+            width: 50%;
+            height: 33%;
+            align-self: center;
+
+    }
+    }
+    
+}
