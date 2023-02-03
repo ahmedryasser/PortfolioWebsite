@@ -2,16 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: stretch;
+  // align-content: stretch;
   //   background-color: whitesmoke;
   align-items: center;
   border-radius: 20px;
-  flex-grow: 1;
-  width: 1fr 1fr;
+  // flex-grow: 1;
   height: 100%;
+  @media screen and (max-width: 600px) {
+    width: 350px;
+    font-size: 8px;
+  }
+  @media screen and (max-width: 450px) {
+    width: 300px;
+    font-size: 7px;
+  }
   font-size: 80%;
   gap: 10px;
   margin-bottom: 50px;
+  padding: 10px;
   img {
     width: 9%;
   }

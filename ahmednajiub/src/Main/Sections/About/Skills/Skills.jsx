@@ -13,10 +13,10 @@ function Skills() {
           <p id= {"backTitle"}> <span> Backend Development </span>  </p>
           <ul id = {"backList"}>
             <li> <img src={Tick}></img> Python </li>
-            <li><img src={Tick}></img> C++ </li>
+            <li> <img src={Tick}></img> C++ </li>
             <li> <img src={Tick}></img> Java </li>
-            <li><img src={Tick}></img> SQL </li>
-            <li><img src={Tick}></img> Assembly language </li>
+            <li> <img src={Tick}></img> SQL </li>
+            <li> <img src={Tick}></img> Assembly language </li>
             <li> <img src={Tick}></img> Machine Language </li>
           </ul>
         </div>

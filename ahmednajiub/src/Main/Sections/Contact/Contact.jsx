@@ -1,52 +1,80 @@
-import { Fragment, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-// import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import "./Contact.scss";
 
 function Contact() {
-  // const form = useRef();
+  const renderForm = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_4vfbmp3', 'template_w6zt9hg', form.current, '-jLRAHRvKhPqZNVRr')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // };
-
+    emailjs
+      .sendForm(
+        "service_4vfbmp3",
+        "template_w6zt9hg",
+        renderForm.current,
+        "-jLRAHRvKhPqZNVRr"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <Fragment>
       <h1>Contact Me</h1>
       <div id={"contact"}>
-        <form action= "mailto:contact@ahmednajiub.com?subject=myform_submission" method="GET">
+        <form onSubmit={sendEmail} ref={renderForm}>
           <h2> GET IN TOUCH</h2>
           <p> Name: </p>
-          <input type={"text"} id={"name"} placeholder={"Your Name"}></input>
+          <input
+            type={"text"}
+            name="user_name"
+            id={"name"}
+            placeholder={"Your Name"}
+            required
+          />
           <p> Email: </p>
-          <input id={"email"} type={"email"} placeholder={"Your Email"}></input>
+          <input
+            id={"email"}
+            name="user_email"
+            type={"email"}
+            placeholder={"Your Email"}
+            required
+          />
           <p> Subject: </p>
-          <input id={"subject"} type={"text"} placeholder={"Subject"}></input>
+          <input
+            id={"subject"}
+            name="subject"
+            type={"text"}
+            placeholder={"Subject"}
+            required
+          />
           <p> Message: </p>
           <textarea
             id={"message"}
             rows={"4"}
+            name={"message"}
             placeholder={"Your message"}
           ></textarea>
-          <input type={"submit"} value={"Send"} id={"sendButton"}></input>
+          <button type={"submit"} id={"sendButton"}></button>
         </form>
       </div>
     </Fragment>
   );
 }
-// const onClickMailtoHandler = () => {
-
+//const sendEmail = () => {
 //   var subject = document.getElementById("subject");
 //   var message = document.getElementById("message");
-//   document.getElementById("mailLink").href = 'mailto:contact@ahmednajiub.com?subject=' + subject + '&body=' + message;
+//   console.log(subject);
+//   document.getElementById("mailLink").href =
+//     "mailto:contact@ahmednajiub.com?subject=" + subject + "&body=" + message;
 //   alert("Sent");
-// }
+// };
 
 export default Contact;

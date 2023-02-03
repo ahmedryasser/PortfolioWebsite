@@ -98,9 +98,10 @@
 #introduction > .box > a.resume {
   grid-area: resume;
   transition: 250ms ease-in-out;
-  :hover {
-    transform: translateY(-5px);
-  }
+}
+
+a.resume:hover{
+  transform: translateY(-5px);
 }
 
 #introduction > .box > a.contact {
@@ -109,7 +110,9 @@
   background-color: var(--main-color);
   transition: 250ms ease-in-out;
 }
-
+a.contact:hover{
+  transform: translateY(-5px);
+}
 #introduction > .box > .profile {
   --size: 25vmax;
   grid-area: profile;

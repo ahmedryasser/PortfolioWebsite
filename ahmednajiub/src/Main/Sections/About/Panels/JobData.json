@@ -1,23 +1,24 @@
 [
+    
+    {
+        "title":"Full-Stack Software Engineering Intern",
+        "location":"Malibu, USA",
+        "date": "August 2022 - now",
+        "employer": "Pepperdine University",
+        "functions": ["Worked on a Multi-Phase Project thorough GitHub and Asana while under the mentorship of a Senior Software Engineer and collaborating with other interns", "Attended Training for ASP.NET MVC, SQL, and Security to understand critical application vulnerabilities and safeguards", "Updated and managed the University Repository Database App, Bonobo Git Server, and added CRUD operations using Entity Framework to add tracking for Service Accounts and Dependencies", "Modernized the Bonobo Interface by implementing frontend changes that matched best practices"]
+    },
+    {   "title":"Software Engineering Intern",
+        "location":"Remote",
+        "date": "June 2022 - August 2022",
+        "employer": "IpserLabs",
+        "functions": ["Working on company website modernization using React Js, HTML, CSS/Sass, and JavaScript following Agile methodology", "Maintained the company’s website as part of the frontend team"]
+
+    },
     {
         "title":" Software Engineering Intern",
         "location":"Cairo, Egypt ",
         "date": "May 2018 - June 2018",
         "employer": "Arab Contractors",
         "functions": ["Shadowed a Senior Software Engineer while he was developing for the company", "Implemented python programs to help the company with its calculations.", "Analyzed and debugged code for the company."]
-    },
-    {
-        "title":"Stock Technical Analysis Intern",
-        "location":"Dubai, UAE ",
-        "date": "May 2020 - June 2020",
-        "employer": "BH Mubasher",
-        "functions": ["Learned many strategies of trading stocks, including stock patterns and trend indicators", "Took a course in technical analysis that provided practical and technical experience trading stocks by referring to stock  patterns, company news, and trend indicators "]
-    },
-    {
-        "title":"President of Computer Science Club",
-        "location":"Malibu, USA",
-        "date": "August 2021 - now",
-        "employer": "Pepperdine University",
-        "functions": ["Selecting a team of the brightest computer scientist students for leadership positions including lead designer and presenter.", "Managing the process of marketing the club through posters and social media  ", "Contacting the university to organize events for the club and funding for its activities", "Attended meetings with the club’s board where we discussed our plans with the club", "Brainstormed ideas the club could do including building applications and games" ]
     }
 ]
