@@ -6,14 +6,32 @@ import Icon from "../../../Media/lock.jpg"
 function Projects() {
     return (
       <Fragment>
-        <div id={"projects"}>
-        {/* <Minesweeper /> */}
-        <div id={"inprogress"}> 
-        <h2> Coming Soon.. </h2>
-        <h3> Projects </h3>
-        <img src={Icon}></img>
+        <h3> Some of my Projects! </h3>
+        <div id = "ipser" class ={"project"}>
+
+
         </div>
+        <div id= "Internship-Frontend" class ={"project"}>
+
+
         </div>
+        <div id = "Internship-backend" class ={"project"}>
+
+
+        </div>
+        <div id= "Pepperplan" class ={"project"}>
+
+
+        </div>
+        <div id = "Portfolio" class ={"project"}>
+
+
+        </div>
+        <div id = "Kotlin" class ={"project"}>
+
+
+        </div>
+        <button> Explore more </button>
       </Fragment>
     );
   }

@@ -29,9 +29,6 @@ function Main() {
           >
             <img id={"linkedin"} src={Linkedin} />
           </a>
-          <a href={"https://www.instagram.com/anajiub"} target={"_blank"}>
-            <img id={"instagram"} src={Instagram} />
-          </a>
         </div>
       </main>
     </Fragment>
