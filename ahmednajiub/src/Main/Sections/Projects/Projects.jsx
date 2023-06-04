@@ -6,7 +6,11 @@ import Icon from "../../../Media/lock.jpg"
 function Projects() {
     return (
       <Fragment>
-        <h3> Some of my Projects! </h3>
+        
+
+        <div class="section">
+        <h1> Some of my Projects! </h1>
+        <div class="projects">
         <div id = "ipser" class ={"project"}>
 
 
@@ -31,7 +35,9 @@ function Projects() {
 
 
         </div>
+        </div>
         <button> Explore more </button>
+      </div>
       </Fragment>
     );
   }

@@ -1,6 +1,20 @@
-#projects{
+.section{
+    margin: 36px 72px;
+}
+.projects{
     align-items: center;
     justify-self: center;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    .project{
+        border: solid black;
+        width: 33.333%;
+        flex: none;
+        
+    }
     #inprogress{
         align-content: center;
         justify-self: center;

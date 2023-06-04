@@ -17,7 +17,7 @@ function Main() {
         <Introduction />
         <About />
 
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
         <div>
           <a href={"https://github.com/ahmedryasser"} target={"_blank"}>

@@ -16,17 +16,14 @@ function Introduction() {
             I'm <span>Ahmed Najiub</span>
           </h1>
           <p>
-            I am Full-Stack Developer studying Computer Science at Pepperdine
-            University. I have experience programming and designing websites and
-            mobile apps in my free time.
+            I am Full-Stack Developer Specializing in ASP.Net MVC and Entity Framework, with lots of project experience in REACT JS and Firebase. I love programming, designing websites, and
+            mobile apps in my free time. Feel Free to ask about any of my projects and how they came to be!
           </p>
           <a
             className={"resume"}
             href={MyResume}
             download={"Ahmed Najiub's Resume.pdf"}
-          >
-            Download Resume
-          </a>
+          >Download Resume</a>
           <Link className={"contact"} to={"/#contact"}>
             Contact me
           </Link>
