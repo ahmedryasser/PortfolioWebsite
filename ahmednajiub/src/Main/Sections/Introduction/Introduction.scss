@@ -9,11 +9,11 @@
   transition: all 0.5s;
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
-    font-size: 0.70em;
+    font-size: 0.7em;
   }
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
-    font-size: 0.50em;
+    font-size: 0.5em;
   }
 }
 
@@ -30,11 +30,11 @@
     "description description profile"
     "resume contact profile"
     ". . profile";
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 576px) {
     column-gap: 40px;
     row-gap: 15px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     column-gap: 30px;
     row-gap: 10px;
   }
@@ -83,13 +83,13 @@
   border-radius: 25px;
   color: var(--main-color);
   border: 2.5px solid var(--main-color);
-  font-size: 1em;
+  font-size: 0.95em;
   text-decoration: none;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 768px) {
     width: 112px;
     height: 37px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 576px) {
     width: 75px;
     height: 25px;
   }
@@ -100,7 +100,7 @@
   transition: 250ms ease-in-out;
 }
 
-a.resume:hover{
+a.resume:hover {
   transform: translateY(-5px);
 }
 
@@ -110,7 +110,7 @@ a.resume:hover{
   background-color: var(--main-color);
   transition: 250ms ease-in-out;
 }
-a.contact:hover{
+a.contact:hover {
   transform: translateY(-5px);
 }
 #introduction > .box > .profile {

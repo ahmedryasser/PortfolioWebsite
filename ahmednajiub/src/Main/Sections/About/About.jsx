@@ -12,12 +12,17 @@ function About() {
       <h2 id={"aboutme"}>More About Me</h2>
 
       <div id={"about"}>
+        <div id="expDiv">
+        <h3>My Work Experience</h3>
         <div className={"experience"}>
           {" "}
           <Experience />
         </div>
+        </div>
+        
         <div className={"skills"}>
           {" "}
+          <h3>Languages I know!</h3>
           <Skills />
         </div>
       </div>

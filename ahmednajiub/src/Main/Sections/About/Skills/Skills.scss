@@ -8,13 +8,17 @@
   border-radius: 20px;
   // flex-grow: 1;
   height: 100%;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 992px) {
+    width: 500px;
+    font-size: 8px;
+  }
+  @media screen and (max-width: 768px) {
     width: 350px;
     font-size: 8px;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 576px) {
     width: 300px;
-    font-size: 7px;
+    font-size: 8px;
   }
   font-size: 80%;
   gap: 10px;
@@ -28,14 +32,14 @@
   #backTitle,
   #frontTitle {
     font-size: 1.25em;
-    @media screen and (max-width: 900px) {
-      font-size: 1em;
+    @media screen and (max-width: 992px) {
+      font-size: 2em;
     }
-    @media screen and (max-width: 600px) {
-      font-size: 0.75em;
+    @media screen and (max-width: 768px) {
+      font-size: 1.5em;
     }
-    @media screen and (max-width: 400px) {
-      font-size: 0.5em;
+    @media screen and (max-width: 576px) {
+      font-size: 1.25em;
     }
   }
   #backend {
@@ -48,7 +52,6 @@
     // gap: 10px;
     border-style: outset;
     border-width: 5px;
-    
 
     #backTitle {
       align-self: start;

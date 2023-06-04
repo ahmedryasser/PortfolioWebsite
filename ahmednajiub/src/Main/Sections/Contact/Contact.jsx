@@ -62,7 +62,9 @@ function Contact() {
             name={"message"}
             placeholder={"Your message"}
           ></textarea>
-          <button type={"submit"} id={"sendButton"}></button>
+          <button type={"submit"} id={"sendButton"}>
+            Send
+          </button>
         </form>
       </div>
     </Fragment>
