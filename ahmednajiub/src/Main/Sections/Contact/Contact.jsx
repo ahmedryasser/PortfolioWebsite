@@ -27,6 +27,7 @@ function Contact() {
   };
   return (
     <Fragment>
+      <div class="section">
       <h1>Contact Me</h1>
       <div id={"contact"}>
         <form onSubmit={sendEmail} ref={renderForm}>
@@ -62,10 +63,11 @@ function Contact() {
             name={"message"}
             placeholder={"Your message"}
           ></textarea>
-          <button type={"submit"} id={"sendButton"}>
+          <button type={"submit"} class={"button"}>
             Send
           </button>
         </form>
+      </div>
       </div>
     </Fragment>
   );

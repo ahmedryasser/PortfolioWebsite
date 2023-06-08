@@ -2,28 +2,31 @@ import React, { Fragment, useState, useEffect } from "react";
 import Minesweeper from "./Minesweeper/Minesweeper";
 import "./Projects.scss";
 import Icon from "../../../Media/lock.jpg"
+import PeppLogo from "../../../Media/Pepperdine-logo.jpg"
+import IpserLogo from "../../../Media/IpserLabLogo.jpg"
+import PepperPlanLogo from "../../../Media/PepperPlan-logo.png"
 
 function Projects() {
     return (
       <Fragment>
         
 
-        <div class="section">
-        <h1> Some of my Projects! </h1>
+        <div class="section" id="projectSec">
+        <h1>Recent Projects!</h1>
         <div class="projects">
         <div id = "ipser" class ={"project"}>
-
-
-        </div>
-        <div id= "Internship-Frontend" class ={"project"}>
-
+          <img src={IpserLogo}></img>
 
         </div>
-        <div id = "Internship-backend" class ={"project"}>
-
+        <div id= "Internship" class ={"project"}>
+          <img src={PeppLogo}></img>
 
         </div>
-        <div id= "Pepperplan" class ={"project"}>
+        <div id = "Pepperplan" class ={"project"}>
+          {/* <img src={PepperPlanLogo}></img> */}
+
+        </div>
+        <div id= "csclub" class ={"project"}>
 
 
         </div>
@@ -36,7 +39,7 @@ function Projects() {
 
         </div>
         </div>
-        <button> Explore more </button>
+        <button class= {"button"} id={"exploreBtn"}> Explore more </button>
       </div>
       </Fragment>
     );

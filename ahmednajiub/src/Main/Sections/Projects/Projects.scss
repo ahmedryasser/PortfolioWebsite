@@ -1,37 +1,49 @@
 .section{
-    margin: 36px 72px;
+    padding: 36px 72px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#projectSec{
+    background-color: var(--main-color);
 }
 .projects{
-    align-items: center;
-    justify-self: center;
     margin-top: 50px;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
+    flex-wrap: wrap;
+    align-content: space-between;
     .project{
-        border: solid black;
-        width: 33.333%;
-        flex: none;
-        
-    }
-    #inprogress{
-        align-content: center;
-        justify-self: center;
-        color:black;
-        background-color: white;
-        border-style: outset;
-        width: 1fr;
-        border-radius: 10px;
-        margin: 25%;
-        
-        text-align: center;
+            border: 5px solid white;
+            border-style: outset;
+            width: 27%;
+            flex: none;
+            margin: 6px;
+            min-height: 150px;
+            border-radius: 5px;
+            background-color: white;
+            min-width: 250px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         img{
-            width: 50%;
-            height: 33%;
-            align-self: center;
-
+            width: 90%;
+            height: 90%;
+            background-color: transparent;
+        }
     }
+}
+#exploreBtn{
+    margin: 25px;
+    background-color: white;
+    color: #364F6B;
+}
+#ipser{
+    img{
+        width: 80%;
+        height: 70%;
     }
-    
 }

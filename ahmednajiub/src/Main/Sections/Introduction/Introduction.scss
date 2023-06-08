@@ -94,16 +94,13 @@
     height: 25px;
   }
 }
-
 #introduction > .box > a.resume {
   grid-area: resume;
   transition: 250ms ease-in-out;
 }
-
 a.resume:hover {
   transform: translateY(-5px);
 }
-
 #introduction > .box > a.contact {
   grid-area: contact;
   color: white;

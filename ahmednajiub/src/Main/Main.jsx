@@ -5,7 +5,6 @@ import About from "./Sections/About/About";
 import Projects from "./Sections/Projects/Projects";
 import Contact from "./Sections/Contact/Contact";
 import Linkedin from "../Media/LI-In-Bug.png";
-import Instagram from "../Media/InstaIcon.png";
 import Github from "../Media/GitHub.png";
 
 import "./Main.scss";
@@ -16,15 +15,14 @@ function Main() {
       <main>
         <Introduction />
         <About />
-
-        {/* <Projects /> */}
+        <Projects />
         <Contact />
         <div>
           <a href={"https://github.com/ahmedryasser"} target={"_blank"}>
             <img id={"github"} src={Github} />
           </a>
           <a
-            href={"https://www.linkedin.com/in/ahmed-najiub-75a22a1aa/"}
+            href={"https://www.linkedin.com/in/ahmednajiub"}
             target={"_blank"}
           >
             <img id={"linkedin"} src={Linkedin} />

@@ -8,6 +8,7 @@ import Skills from "../About/Skills/Skills.jsx";
 function About() {
   return (
     <Fragment>
+      <div class="section" id="aboutSec">
       <h1>Who am I?</h1>
       <h2 id={"aboutme"}>More About Me</h2>
 
@@ -25,6 +26,7 @@ function About() {
           <h3>Languages I know!</h3>
           <Skills />
         </div>
+      </div>
       </div>
     </Fragment>
   );

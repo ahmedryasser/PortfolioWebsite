@@ -2,9 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 25px;
   // align-content: stretch;
   //   background-color: whitesmoke;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 20px;
   // flex-grow: 1;
   height: 100%;
@@ -25,7 +26,8 @@
   margin-bottom: 50px;
   padding: 10px;
   img {
-    width: 9%;
+    width: 20%;
+    border-radius: 40%;
   }
 
   li,
@@ -43,53 +45,55 @@
     }
   }
   #backend {
-    display: grid;
-    aspect-ratio: 1 / 1;
-    max-width: 200px;
-    flex: 1;
-    border-radius: 10px;
-    background-color: white;
-    // gap: 10px;
-    border-style: outset;
-    border-width: 5px;
+    display: flex;
+      flex-direction: column;
+      aspect-ratio: 1/1;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 200px;
+      flex: 1 1;
+      border-radius: 10px;
+      background-color: white;
+      border-style: outset;
+      border-width: 5px;
 
     #backTitle {
-      align-self: start;
       justify-self: center;
       color: var(--main-color);
       font-weight: bold;
     }
 
     #backList {
-      align-self: center;
       justify-self: start;
     }
   }
   li {
     list-style: none;
+    display: flex;
+    align-items: center;
   }
 
   #frontend {
-    display: grid;
-    flex: 1;
-    width: wrap;
-    aspect-ratio: 1 / 1;
-    max-width: 200px;
-    border-radius: 10px;
-    background-color: white;
-    border-width: 5px;
-    border-style: outset;
+    display: flex;
+      flex-direction: column;
+      aspect-ratio: 1/1;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 200px;
+      flex: 1 1;
+      border-radius: 10px;
+      background-color: white;
+      border-style: outset;
+      border-width: 5px;
     // @media screen and (max-width: 800px) {
     //   max-width: 200px;
     // }
     #frontTitle {
-      align-self: start;
       justify-self: center;
       color: var(--main-color);
       font-weight: bold;
     }
     #frontList {
-      align-self: start;
       justify-self: start;
     }
   }
