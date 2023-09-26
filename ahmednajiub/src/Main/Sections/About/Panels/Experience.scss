@@ -1,32 +1,31 @@
 #experienceDiv {
   display: grid;
   position: relative;
-  width: 400px;
+  width: 45vw;
   height: 100%;
   color: black;
-  font-size: 10px;
+  font-size: 12px;
   padding: 0px 20px 10px 10px;
+  max-width: 400px;
   @media screen and (max-width: 768px) {
     width: 350px;
-    font-size: 8px;
+    font-size: 10px;
   }
   @media screen and (max-width: 576px) {
     width: 300px;
-    font-size: 6px;
+    font-size: 9px;
   }
   // align-self: center;
   // justify-self: center;
 }
 #jobs {
-  // width: 400px;
   display: grid;
   position: relative;
   font-size: 0.5em;
   list-style: none;
   padding: 10px;
+  grid-gap: 5px;
   gap: 5px;
-  // background-color: whitesmoke;
-  // border: 2.5px solid black;
   border-radius: 20px;
 }
 .job {
@@ -38,6 +37,8 @@
   background-color: white;
   border-style: outset;
   border-width: 5px;
+  padding-bottom: 5px;
+  min-height: fit-content;
 }
 
 #titleDiv {
@@ -94,9 +95,11 @@
   position: absolute;
   top: 60px;
   left: -10;
-  font-size: 6.5px;
+  font-size: 150%;
   margin-right: 3px;
-  @media screen and (min-width: 576px) {
-    font-size: 6px;
+  
+  padding-left: 25px;
+  li{
+    margin-bottom: 2%;
   }
 }

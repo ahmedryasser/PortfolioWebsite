@@ -3,9 +3,19 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    
+    
 }
-#projectSec{
+@media screen and (min-width: 1300px) {
+    #projects.section{
+      padding: 0 300px;  
+    }
+}
+#projects{
     background-color: var(--main-color);
+    h1{
+        color: white
+    }
 }
 .projects{
     margin-top: 50px;
@@ -21,29 +31,160 @@
             width: 27%;
             flex: none;
             margin: 6px;
-            min-height: 150px;
-            border-radius: 5px;
+            height: 160px;
+            border-radius: 2vw;
             background-color: white;
             min-width: 250px;
             padding: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
+            max-width: 300px;
         img{
             width: 90%;
-            height: 90%;
+            height: 50%;
             background-color: transparent;
         }
     }
-}
-#exploreBtn{
-    margin: 25px;
-    background-color: white;
-    color: #364F6B;
-}
-#ipser{
+    #csclub.unhovered{
+        background-color: hsl(0, 0%, 90%);
+        border: 5px outset white;
+        background-image: url("../../../Media/pepperdine-university.jpg");
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: soft-light;
+        background-repeat: no-repeat;
+        img {
+            height: 30%;
+            width: 80%;
+        }
+    }
+    #Pepperplan.unhovered{
+        background-color: black;
+        border: 5px outset black;
+        background-image: url("../../../Media/Pepperplan-photo.png");
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: luminosity;
+        background-repeat: no-repeat;
+        img{
+            height: 35%;
+        }
+    }
+    .appear{
+        display:block;
+    }
+    .hovered{
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color) ;
+        transition-delay: 100ms;
+    }
+    #ipser.unhovered{
+        background-color: white;
+        background-position: center;
+        border-color: white;
+        background-size: 100%;
+        background-blend-mode: soft-light;
+        background-repeat: no-repeat;
     img{
         width: 80%;
-        height: 70%;
+        height: 40%;
     }
+}
+    // #ipser:hover{
+    //     background: var(--main-color);
+    //     border-color: var(--main-color);
+    //     transition-delay: 200ms;
+    //     img {
+    //         display: none;
+    //     }
+    // }
+}
+
+
+
+#internship.unhovered{
+    background-color: #2d3e50;
+    background-position: center;
+    border-color: #2d3e50;
+    background-image: url("../../../Media/Office-photo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    img{
+        height: 50%;
+    }
+}
+#portfolio.unhovered{
+    background-color: white;
+    background-position: center;
+    border-color: black;
+    background-image: url("../../../Media/react_animation.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    img {
+        height: 85%;
+    }
+}
+
+#kotlin.unhovered{
+    background: white;
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-color: white;
+    img {
+        width: 100%;
+        height: 90%;
+    }
+}
+
+.exploreBtn{
+        margin: 20px;
+        background-color: white;
+        text-decoration: none;
+        font-size: 0.7em;
+        border-radius: 20px;
+        border-color: white;
+        margin-bottom: 20px;
+        transition: 250ms ease-in-out;
+        border-style: outset;
+        align-self: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;  
+}
+.hoverDiv{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    h2{
+        margin:0;
+    }
+    .exploreBtn{
+        margin: 0;
+        height: 0.85em;
+        width: fit-content;
+        padding: 8px;
+        color: var(--secondary-color);
+        background-color: white;
+        border-color: white;
+    }
+}
+.exploreBtn:hover{
+        transform: translateY(10%);
+    }
+.hoverTxt{
+    font-size: 0.5em;
+}
+.disappear{
+        display:none;
+    }
+.hoverDiv.disappear{
+    display: none;
 }

@@ -18,12 +18,11 @@ function Main() {
         <Projects />
         <Contact />
         <div>
-          <a href={"https://github.com/ahmedryasser"} target={"_blank"}>
+          <a href={"https://github.com/ahmedryasser"} >
             <img id={"github"} src={Github} />
           </a>
           <a
             href={"https://www.linkedin.com/in/ahmednajiub"}
-            target={"_blank"}
           >
             <img id={"linkedin"} src={Linkedin} />
           </a>

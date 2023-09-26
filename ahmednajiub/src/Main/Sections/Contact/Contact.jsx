@@ -27,11 +27,11 @@ function Contact() {
   };
   return (
     <Fragment>
-      <div class="section">
-      <h1>Contact Me</h1>
+      <div id="contactme" class="section">
+      <h1 id="contactintro">Contact Me</h1>
       <div id={"contact"}>
         <form onSubmit={sendEmail} ref={renderForm}>
-          <h2> GET IN TOUCH</h2>
+          <h2>Lets Get In Touch!</h2>
           <p> Name: </p>
           <input
             type={"text"}

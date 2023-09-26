@@ -12,7 +12,7 @@ function Job(props) {
           <h1 id={"title"}>{data.title}</h1>
         </div>
         <h1 id={"location"}>{data.location}</h1>
-        <h1 id={"date"}>{data.date}</h1>
+        {/* <h1 id={"date"}>{data.date}</h1> */}
         <h1 id={"employer"}>{data.employer}</h1>
         <ul id={"details"}>
           {data.functions.map((detail) => (

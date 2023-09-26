@@ -14,6 +14,10 @@
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     font-size: 0.5em;
+    height: 60vh;
+  }
+  @media screen and (max-width: 500px) {
+    height: 35vh;
   }
 }
 
@@ -64,6 +68,7 @@
 #introduction > .box > h1 {
   grid-area: heading;
   margin: 0;
+  color: black;
 }
 
 #introduction > .box > h1 > span {
@@ -83,20 +88,21 @@
   border-radius: 25px;
   color: var(--main-color);
   border: 2.5px solid var(--main-color);
-  font-size: 0.90em;
+  //font-size: 85%;
   text-decoration: none;
   @media screen and (max-width: 768px) {
     width: 112px;
     height: 37px;
   }
   @media screen and (max-width: 576px) {
-    width: 75px;
+    width: 77px;
     height: 25px;
   }
 }
 #introduction > .box > a.resume {
   grid-area: resume;
   transition: 250ms ease-in-out;
+  white-space: nowrap;
 }
 a.resume:hover {
   transform: translateY(-5px);
@@ -119,7 +125,7 @@ a.contact:hover {
     --size: 20vmax;
   }
   @media screen and (max-width: 400px) {
-    --size: 15vmax;
+    --size: 13vmax;
   }
 }
 

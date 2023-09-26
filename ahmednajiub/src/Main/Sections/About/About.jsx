@@ -23,7 +23,7 @@ function About() {
         
         <div className={"skills"}>
           {" "}
-          <h3>Languages I know!</h3>
+          <h3>Languages and Libraries I know!</h3>
           <Skills />
         </div>
       </div>

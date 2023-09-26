@@ -8,7 +8,7 @@ function Navigation() {
   return (
     <Fragment>
       <nav>
-        <Link to={"/"}> Ahmed Najiub </Link>
+        <Link to={"/"} class="nowrap">Ahmed Najiub</Link>
         <ul>
           <li>
             <Link to={"/#introduction"} id="Home">
